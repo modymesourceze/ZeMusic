@@ -1,9 +1,9 @@
 import asyncio
 from pyrogram import Client, filters
 from strings.filters import command
-from pyrogram.types import Message, VoiceChatStarted, VoiceChatEnded
+from pyrogram.types import Message, ChatPrivileges
 from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from ZeMusic.core.call import Elhyba
+from ZeMusic.core.call import Mody
 from ZeMusic.utils.database import get_assistant
 
 @app.on_message(filters.voice_chat_started)
