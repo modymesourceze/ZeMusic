@@ -10,7 +10,7 @@ import pytz
 from ZeMusic.core.call import Mody
 from pytgcalls import PyTgCalls, StreamType
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
-from ZeMusic.core.call import Elhyba
+from ZeMusic.core.call import Mody
 from ZeMusic.utils.database import *
 from pytgcalls.exceptions import (NoActiveGroupCall,TelegramServerError,AlreadyJoinedError)
 from pyrogram.errors import (
