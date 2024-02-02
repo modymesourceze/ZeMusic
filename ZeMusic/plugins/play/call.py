@@ -6,12 +6,12 @@ from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from ZeMusic.core.call import Mody
 from ZeMusic.utils.database import get_assistant
 
-@app.on_message(filters.voice_chat_started)
+@app.on_message(filters.video_chat_started)
 async def stcall(client: Client, message: Message): 
       Startt = "الكول اتفتح 🙈♥"
       await message.reply_text(Startt)
 
-@app.on_message(filters.voice_chat_ended)
+@app.on_message(filters.video_chat_ended)
 async def encall(client: Client, message: Message): 
       Enddd = "قفلت الكول ليه ربنا يسمحك 😔😭"
       await message.reply_text(Enddd)
@@ -20,7 +20,7 @@ async def encall(client: Client, message: Message):
 async def zoharyy(client: Client, message: Message): 
            text = f"-قام {message.from_user.mention}\n - بدعوتك للكول ي رايق 🥺♥ : "
            x = 0
-           for user in message.voice_chat_members_invited.users:
+           for user in message.video_chat_members_invited.users:
              try:
                text += f"[{user.first_name}](tg://user?id={user.id}) "
                x += 1
