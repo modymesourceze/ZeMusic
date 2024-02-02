@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from ZeMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from ZeMusic.core.call import mody
+from ZeMusic.core.call import Mody
 from ZeMusic.utils import seconds_to_min, time_to_seconds
 from ZeMusic.utils.channelplay import get_channeplayCB
 from ZeMusic.utils.decorators.language import languageCB
