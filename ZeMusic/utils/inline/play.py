@@ -1,5 +1,7 @@
 import math
 
+from ZeMusic import app 
+
 from pyrogram.types import InlineKeyboardButton
 
 from ZeMusic.utils.formatters import time_to_seconds
