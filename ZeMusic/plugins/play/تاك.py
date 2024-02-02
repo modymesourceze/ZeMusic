@@ -3,7 +3,7 @@ import os
 import time
 import requests
 import aiohttp
-import command
+from strings.filters import command
 from pyrogram import filters
 from pyrogram import Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
