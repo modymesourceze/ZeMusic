@@ -27,7 +27,7 @@ chat = []
 async def azaan(c, msg):
   if msg.text == "تفعيل الاذان":
     if msg.chat.id in chat:
-      return await msg.reply_text("- الاذان متفعل اصلا يسطا 🥰♥")
+      return await msg.reply_text("- الاذان متفعل هنا من قبل 🥰♥️")
     else:
       chat.append(msg.chat.id)
       return await msg.reply_text("تم تفعيل الاذان ♥️🌿")
@@ -36,15 +36,15 @@ async def azaan(c, msg):
       chat.remove(msg.chat.id)
       return await msg.reply_text("تم تعطيل الاذان ♥️🌿")
     else:
-      return await msg.reply_text("- الاذان متعطله اصلا يسطا 🥰♥")
+      return await msg.reply_text("- الاذان متعطل هنا من قبل 🥰♥️")
       
 async def kill():
   for i in chat:
-    await Elhyba.force_stop_stream(i)
+    await Mody.force_stop_stream(i)
 
 
 async def play(i):
-  assistant = await group_assistant(Elhyba,i)
+  assistant = await group_assistant(Mody,i)
   file_path = "./ZeMusic/assets/azan.m4a"
   stream = AudioPiped(file_path, audio_parameters=HighQualityAudio())
   try:
@@ -55,7 +55,7 @@ async def play(i):
       )
   except NoActiveGroupCall:
     try:
-        await Elhyba.join_assistant(i,i)
+        await Mody.join_assistant(i,i)
     except Exception as e:
        await app.send_message(i,f"{e}")
   except TelegramServerError:
@@ -96,6 +96,8 @@ def prayer_time():
    except Exception as e:
        asyncio.sleep(5)
        print(e)  
+#لالالالا
+# جتة مواعيد الصلاة الي تحت دي سارقها من هلال علشان م بعرف استخدم مكتبة ال time ف انضموا لقناته @SOURCEFR3ON
 
 async def azkar():
   while not await asyncio.sleep(2):
@@ -103,8 +105,9 @@ async def azkar():
      prayer = prayer_time()
      await kill()
      for i in chat:
-       await app.send_message(i, f"حان الان وقت اذان {prayer} 🥰♥")
+       await app.send_message(i, f"حان الان وقت اذان {prayer} بتوقيت القاهرة 🥰♥️")
        await play(i)
      await asyncio.sleep(174)
      await kill()
-
+#مواعيد الصلاه بس الي سارقها بقيت الكود كتابتي هي اكيد كتابه معاقه بس عادي م مهم رايك انا مبسوط بيها يوزري للاعمال الخاصه @z0hary
+     

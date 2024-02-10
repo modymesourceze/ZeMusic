@@ -6,8 +6,7 @@ from ZeMusic import app
 import random
 from strings.filters import command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from pyrogram.enums import ParseMode, ChatMemberStatus 
-
+from pyrogram.errors import FloodWait
 lokrf = []
 
 @app.on_message(
@@ -51,10 +50,10 @@ async def idljjopen(client:Client, message:Message):
     elif get.status in [ChatMemberStatus.ADMINISTRATOR]:
         rotba= "أدمـــن"
     else:
-        return await message.reply_text(f"**يا {message.from_user.mention} انت لست مشرفا هنا**")       
+        return await message.reply_text(f"**يا {message.from_user.mention} انت لست مشرف هنا**")       
     if get.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR] and  dev:
       if not message.chat.id in lokrf:
-        return await message.reply_text(f"**يا {message.from_user.mention}\الالعاب معفل من قبل**")
+        return await message.reply_text(f"**يا {message.from_user.mention}\الالعاب مفعله من قبل**")
       lokrf.remove(message.chat.id)
       return await message.reply_text(f"**تم فتح الالعاب بنجاح\n\n بواسطة {rotba} ←{message.from_user.mention}**")
  
@@ -63,98 +62,98 @@ async def idljjopen(client:Client, message:Message):
 
 klb = []
 
-@app.on_message(command("رفع كلب"))
+@app.on_message(command("رفع مميز"))
 async def rf3nmla(client:Client, message:Message):
   
   if message.reply_to_message.from_user.mention in klb:
     klb.append(message.reply_to_message.from_user.mention)
-  await message.reply_text(f"**تم رفع العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n كلب من قبل {message.from_user.mention}😂♥️**")
+  await message.reply_text(f"**تم رفع العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n مميز من قبل {message.from_user.mention}**")
 
 
-@app.on_message(command("ت كلب"))
+@app.on_message(command("تنزيل مميز"))
 async def tnzelnmla(client:Client, message:Message):
   if message.reply_to_message.from_user.mention in klb:
     klb.remove(message.reply_to_message.from_user.mention)
-  await message.reply_text(f"**تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n من قائمة الكلاب 😂♥️ \n\n لعرض القائمه اكتب قائمة الكلاب**")
+  await message.reply_text(f"**تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n من قائمة المميزين  \n\n لعرض القائمه اكتب `المميزين`**")
 
 
-@app.on_message(command("قائمة كلاب"))
+@app.on_message(command("المميزين"))
 async def nml(client:Client, message:Message):
   kq = ""
   for n in klb:
       kq += n + "\n"
-  await message.reply_text(f"**قائمة الكلاب لي تنبح 😂😂 \n\n{kq}**")
+  await message.reply_text(f"**قائمة المميزين  \n\n{kq}**")
 
 zoj = []
 
 
-@app.on_message(command("رفع زوجي"))
+@app.on_message(command("رفع ادمن"))
 async def rf3nmla(client, message:Message):
   if message.reply_to_message.from_user.mention in zoj:
     zoj.append(message.reply_to_message.from_user.mention)
-  await message.reply_text(f"**تم رفع العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n  زوج لـ {message.from_user.mention}😂♥️ \n\n لعرض القائمه اكتب قائمة المتزوجين**")
+  await message.reply_text(f"**تم رفع العضو\n│ \n : {message.reply_to_message.from_user.mention}\n\n  ادمن من قبل {message.from_user.mention}\n\n لعرض القائمه اكتب `الادمنيه`**")
 
 
-@app.on_message(command("ت زوجي"))
+@app.on_message(command("تنزيل ادمن"))
 async def tnzelnmla(client:Client, message:Message):
   if message.reply_to_message.from_user.mention in zoj:
     zoj.remove(message.reply_to_message.from_user.mention)
-  await message.reply_text(f"**تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n من قائمة المتزوجين رد عزابي 😂♥️**")
+  await message.reply_text(f"**تم تنزيل العضو\n│ \n : {message.reply_to_message.from_user.mention}\n\n من قائمة الادمنيه **")
 
 
-@app.on_message(command("قائمة المتزوجين"))
+@app.on_message(command("الادمنيه"))
 async def nml(client, message):
   zq = ""
   for n in zoj:
       zq += n + "\n"
-  await message.reply_text(f"**قائمة العرسان 😂😂 \n {zq}**")
+  await message.reply_text(f"**قائمه الادمنيه :  \n {zq}**")
 
 hth =[]
 
 
-@app.on_message(command("رفع حثاله"))
+@app.on_message(command("رفع مدير"))
 async def rf3nmla(client, message:Message):
   
   if message.reply_to_message.from_user.mention in hth:
     hth.append(message.reply_to_message.from_user.mention)
-  await message.reply_text(f"**تم رفع العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n  حثاله من قبل {message.from_user.mention}😂♥️\n\n لعرض القائمه اكتب قائمة حثاله**")
+  await message.reply_text(f"**تم رفع العضو\n│ \n : {message.reply_to_message.from_user.mention}\n\n  مدير من قبل {message.from_user.mention}\n\n لعرض القائمه اكتب `المدراء`**")
 
 
-@app.on_message(command("ت حثاله"))
+@app.on_message(command("تنزيل مدير"))
 async def tnzelnmla(client:Client, message:Message):
   if message.reply_to_message.from_user.mention in hth:
     hth.remove(message.reply_to_message.from_user.mention)
-  await message.reply_text(f"**تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n من قائمة الحثاله 😂♥️**")
+  await message.reply_text(f"**تم تنزيل العضو\n│ \n : {message.reply_to_message.from_user.mention}\n\n من قائمة المدراء اكتب `المدراء` **")
 
 
-@app.on_message(command("قائمة حثاله"))
+@app.on_message(command("المدراء"))
 async def nml(client, message):
   hq = ""
   for n in hth:
       hq += n + "\n"
-  await message.reply_text(f"**حثالة المجتمع 😂😂 : \n {hq}**")
+  await message.reply_text(f"**قائمه المدراء  : \n {hq}**")
 
 
 zog =[]
 
 
-@app.on_message(command("رفع زوجتي"))
+@app.on_message(command("رفع منشى"))
 async def rf3nmla(client, message:Message):
   if message.reply_to_message.from_user.mention in zog:
     zog.append(message.reply_to_message.from_user.mention)
-  await message.reply_text(f"**تم رفع العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n  قعدت مرات هذا خلفو دنقات {message.from_user.mention}😂♥️ \n\n لعرض القائمه اكتب قائمة المتزوجات**")
+  await message.reply_text(f"**تم رفع العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n  منشى من قبل : {message.from_user.mention} \n\n لعرض القائمه اكتب `المنشئين`**")
 
 
-@app.on_message(command("ت زوجتي"))
+@app.on_message(command("تنزيل منشى"))
 async def tnzelnmla(client:Client, message:Message):
   if message.reply_to_message.from_user.mention in zog:
     zog.remove(message.reply_to_message.from_user.mention)
-  await message.reply_text(f"**تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n  وصارت مطلقه جاده للزواج 😂♥️**")
+  await message.reply_text(f"**تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n  من قائمه المنشئين **")
 
 
-@app.on_message(command("قائمة المتزوجات"))
+@app.on_message(command("المنشئين"))
 async def nml(client:Client, message:Message):
   zzq = ""
   for n in zog:
       zzq += n + "\n"
-  await message.reply_text(f"**قائمة العرسان 😂😂 \n {zzq}**")
+  await message.reply_text(f"**قائمة المنشئين :  \n {zzq}**")
