@@ -1,6 +1,5 @@
 import asyncio
 from pyrogram import Client, filters
-from strings import get_command
 from strings.filters import command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
@@ -9,7 +8,6 @@ from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 @app.on_message(
     command(["","‹ اوامر التشغيل ›"])
     & filters.group
-    & ~filters.edited
 )
 async def maker(client: Client, message: Message):
     await message.reply_photo(
@@ -50,7 +48,6 @@ async def maker(client: Client, message: Message):
 @app.on_message(
     command(["","‹ اوامر التفعيل ›"])
     & filters.group
-    & ~filters.edited
 )
 async def maker(client: Client, message: Message):
     await message.reply_photo(
@@ -94,7 +91,6 @@ async def maker(client: Client, message: Message):
 @app.on_message(
     command(["",""])
     & filters.group
-    & ~filters.edited
 )
 async def maker(client: Client, message: Message):
     await message.reply_photo(
