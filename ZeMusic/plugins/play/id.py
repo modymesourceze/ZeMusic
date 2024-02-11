@@ -98,7 +98,7 @@ def get_file_id(msg: Message):
 
     #)
 
-@app.on_message(filters.regex("^ا$") & filters.group & SUDOERS)
+@app.on_message(filters.regex("^ا$") & filters.group)
 async def khalid(client: Client, message: Message):
 
     usr = await client.get_chat(message.from_user.id)
