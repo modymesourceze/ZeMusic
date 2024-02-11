@@ -9,7 +9,6 @@ from pyrogram.types import InlineKeyboardButton
 from ZeMusic import app
 from ZeMusic.utils.database import is_on_off
 from ZeMusic import app
-from ZeMusic.plugins.misc import SUDOERS
 import re
 import sys
 import os
