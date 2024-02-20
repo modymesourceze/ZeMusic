@@ -26,9 +26,8 @@ from dotenv import load_dotenv
 async def bkouqw(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/41a777f089288f7ad2571.jpg",
-        caption=f"""**اهلا بك عزيزي {message.from_user.mention} في اصدار سورس زد إي
-★᚜ اسم سورس : زد إي
-
+        caption=f"""**اهلا بك عزيزي {message.from_user.mention} في اصدار سورس 𝙺𝙸𝙽𝙶
+★᚜ اسم سورس : 𝙺𝙸𝙽𝙶
 ★᚜ نوع : ميوزك
 
 ★᚜ اللغه : اللغه العربيه ويدعم الانجليزيه 
@@ -38,12 +37,12 @@ async def bkouqw(client: Client, message: Message):
 ★᚜ الاصدار 2.0.14
 ★᚜ تاريخ التأسيس : 2024/2/2
 
-★᚜ مؤسس زد إي : [ 𐇮 𝑴𝑶𝑫𝒀 𖠮🚸𖠮 آلـۘهہؚيـٰـ‌ُـُ໋۠بـ໋ۘ۠ه 𐇮](https://t.me/D_S_I)""",
+★᚜ مؤسس 𝙺𝙸𝙽𝙶 : [ 『 🇾🇪⃤𝐀𝐁𝐃𝐔𝐋𝐋𝐀𝐇 个 ١9 』 ](https://t.me/IC_19)""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱", url=f"https://t.me/Source_Ze"), 
+                        "『 𝚂𝙾𝚄𝚁𝙲𝙴 𝙺𝙸𝙽𝙶 』", url=f"https://t.me/EF_19"), 
                  ],[
                  InlineKeyboardButton(
                         "", callback_data="hpdtsnju"),
