@@ -1,7 +1,7 @@
 {
-    "name": "𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐁",
+    "name": "『 𝚂𝙾𝚄𝚁𝙲𝙴 𝙺𝙸𝙽𝙶 』",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://telegra.ph/file/41a777f089288f7ad2571.jpg",
+    "logo": "https://telegra.ph/file/1a77a02bdb06d55051845.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -13,27 +13,27 @@
     ],
     "env": {
       "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "ايبي ايدي https://my.telegram.org",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "ايبي هاش https://my.telegram.org",
         "value": "",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
+        "description": "ضع هنا تكون البوت الذي صنعته من @BotFather.",
         "value": "",
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "",
+        "description": "لا تغيره",
+        "value": "mongodb+srv://abood:Ab774394887@cluster0.rbp1cqz.mongodb.net/?retryWrites=true&w=majority",
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id of user whom you would like to add as OWNER.",
+        "description": "معرف المستخدم الخاص بالمستخدم الذي ترغب في إضافته كمالك",
         "value": "",
         "required": true
       },
@@ -43,17 +43,17 @@
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
+        "description": "Get it from http://dashboard.heroku.com/account",
         "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "Your heroku app name",
+        "description": " اسم تطبيق Heroku الخاص بك",
         "value": "",
         "required": false
       },
       "LOGGER_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "description": "معرف مجموعة السجل الخاص بك، أضف البوت الخاص بك والحساب المساعد وقم برفعه ادمن بكل الصلاحيات!.",
         "value": "",
         "required": true
       }
