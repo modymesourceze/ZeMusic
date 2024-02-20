@@ -30,4 +30,4 @@ async def Italymusic(client: Client, message: Message):
         print(e)
         rank = "مش عرفنلو مله ده😒"
         await message.reply_text(
-        text=f"""نعم حبيبي : {italy} 🥰❤️\n**انا اسمي القميل : {bot_name} 🥺🙈\n**رتبتك هي : {rank}""", reply_markup=keyboard)
+        text=f"""نعم حبيبي : {italy} 🥰❤️\n**انا اسمي 𝙺𝙸𝙽𝙶 : {bot_name} 🥺🙈\n**رتبتك هي : {rank}""", reply_markup=keyboard)
