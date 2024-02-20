@@ -9,10 +9,10 @@ async def arbic(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
         f""" 🔱**[مرحبا بك] [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) ! \n
-※ [انا بوت تشغيل الأغاني والفيديو  في المكالمه المرئية](https://t.me/Source_Ze) \n
-※[لاظهار كيبورد الاعضاء اضغط](https://t.me/Source_Ze) /ZE \n
-※ [في حال مواجهه اي مشكله انضم هنا](https://t.me/Source_Ze)\n [🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱](https://t.me/Source_Ze)
-※ [استخدم الازرار لمعرفه الاوامر المستخدمه.](https://t.me/Source_Ze) """,
+※ [انا بوت تشغيل الأغاني والفيديو  في المكالمه المرئية](https://t.me/EF_19) \n
+※[لاظهار كيبورد الاعضاء اضغط](https://t.me/EF_19) /ZE \n
+※ [في حال مواجهه اي مشكله انضم هنا](https://t.me/EF_19)\n [『 𝙺𝙸𝙽𝙶 』](https://t.me/EF_19)
+※ [استخدم الازرار لمعرفه الاوامر المستخدمه.](https://t.me/EF_19) """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -21,7 +21,7 @@ async def arbic(_, query: CallbackQuery):
                         url=f"https://t.me/{app.username}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("الدعم والتواصل", url=f"https://t.me/ZeSupport"),
+                [InlineKeyboardButton("الدعم والتواصل", url=f"https://t.me/IC_19"),
                 
 InlineKeyboardButton("لتفعيل كيبورد الاعضاء", callback_data="ze"),
                 ],
@@ -30,12 +30,12 @@ InlineKeyboardButton("لتفعيل كيبورد الاعضاء", callback_data="
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ السورس ›", url=f"https://t.me/Source_Ze"
+                        "‹ السورس ›", url=f"https://t.me/EF_19"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ المطور ›", url="https://t.me/D_S_I"
+                        "‹ المطور ›", url="https://t.me/IC_19"
                     )
                 ],
             ]
@@ -62,11 +62,11 @@ InlineKeyboardButton(" member keyboard ", callback_data="Source_Ze"),
                 ],
                 [                
                     InlineKeyboardButton(" Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton(" Donate", url=f"https://t.me/Source_Ze"),
+                    InlineKeyboardButton(" Donate", url=f"https://t.me/EF_19"),
                 ],
                 [
                     InlineKeyboardButton(
-                        " DEVELOPER ", url="https://t.me/D_S_I"
+                        " DEVELOPER ", url="https://t.me/IC_19"
                     )
                 ],
             ]
@@ -113,7 +113,7 @@ async def cbcmds(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""🥹♥ **Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 » **press the button below to read the explanation and see the list of available commands !**
-√ __Powered by 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🐉 """,
+√ __Powered by 『 𝙺𝙸𝙽𝙶 』 🐉 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
