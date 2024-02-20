@@ -6,26 +6,26 @@ from pyrogram import filters
 
 load_dotenv()
 
-# Get this value from my.telegram.org/apps
+# Get this value from https://my.telegram.org
 API_ID = int(getenv("API_ID","20036317"))
 API_HASH = getenv("API_HASH","986cb4ba434870a62fe96da3b5f6d411")
 
-# Get your token from @BotFather on Telegram.
+# ضع هنا تكون البوت الذي صنعته من @BotFather.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
-# Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("mongodb+srv://abood:Ab774394887@cluster0.rbp1cqz.mongodb.net/?retryWrites=true&w=majority")
+# لا تغيره
+MONGO_DB_URI = "mongodb+srv://abood:Ab774394887@cluster0.rbp1cqz.mongodb.net/?retryWrites=true&w=majority"
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 480))
 
-# Chat id of a group for logging bot's activities
+# معرف مجموعة السجل الخاص بك، أضف البوت الخاص بك والحساب المساعد وقم برفعه ادمن بكل الصلاحيات!.
 LOGGER_ID = int(getenv("LOGGER_ID"))
 
-# Get this value from @FallenxBot on Telegram by /id
+# معرف المستخدم الخاص بالمستخدم الذي ترغب في إضافته كمالك
 OWNER_ID = int(getenv("OWNER_ID", 5145609515))
 
 ## Fill these variables if you're deploying on heroku.
-# Your heroku app name
+# اسم تطبيق Heroku الخاص بك
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
