@@ -11,24 +11,24 @@ API_ID = int(getenv("API_ID","20036317"))
 API_HASH = getenv("API_HASH","986cb4ba434870a62fe96da3b5f6d411")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN","7026523047:AAEEPzlSUFAMQnHQB1aU25VWNuj-nybOGhw")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI",None)
+MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://abood:Ab774394887@cluster0.rbp1cqz.mongodb.net/?retryWrites=true&w=majority")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 480))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID"))
+LOGGER_ID = int(getenv("LOGGER_ID","-1002130178393"))
 
 # Get this value from @FallenxBot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 5145609515))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME","calm-tundra-56565")
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY","a7318b44-f4aa-46e6-a18a-48023eec3afe")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
@@ -62,7 +62,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION",None)
+STRING1 = getenv("STRING_SESSION","BABzGgeU_9QHX3cuN_HDp1On1YDxhYv2k8_R5ATIif2fWhUkbIpNYAStSv1SGMsx_T8_IynAG24Rxf-C86vAUGS8OULR34bozW0416VixUbqNmTwr7Es5yWrAZ1tPYssHvUVIBXa2WrAMnPSACLixICY8V_q5aMf1PD8O3EPivpN-znC_UCcjb649aci9ctqPmfkQBnXYBK4KbPM1GssX78ffwJmkreIgm6enhrIvNvSfUvX01byps8VCC-az9HSio7uk0oss5e7XeqCrOB5dqVedGZi1_m80xbBmIDpHeT3L1cBUukq1NJc87lVa-6nhsaj4m_y3-X9Hvg6X9r3k4xmAAAAAV4DQAYA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
