@@ -116,7 +116,7 @@ fi
 echo """API_ID = $api_id
 API_HASH = $api_hash
 BOT_TOKEN = $bot_token
-MONGO_DB_URI = "mongodb+srv://abood:Ab774394887@cluster0.rbp1cqz.mongodb.net/?retryWrites=true&w=majority"
+MONGO_DB_URI = $mongo_db
 LOGGER_ID = $logger
 STRING_SESSION = $string_session
 OWNER_ID = $ownid""" > .env
