@@ -14,7 +14,7 @@ API_HASH = getenv("API_HASH","986cb4ba434870a62fe96da3b5f6d411")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # لا تغيره
-MONGO_DB_URI = getenv("MONGO_DB_URI")
+MONGO_DB_URI = getenv("MONGO_DB_URI",None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 480))
 
