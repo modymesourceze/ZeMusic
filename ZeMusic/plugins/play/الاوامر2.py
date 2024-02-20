@@ -21,7 +21,7 @@ async def arbic(_, query: CallbackQuery):
                         url=f"https://t.me/{app.username}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱", url=f"https://t.me/Source_Ze"),
+                [InlineKeyboardButton("🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱", url=f"https://t.me/EF_19"),
                 
 InlineKeyboardButton("لتفعيل كيبورد الاعضاء", callback_data="afyona"),
                 ],
@@ -30,15 +30,15 @@ InlineKeyboardButton("لتفعيل كيبورد الاعضاء", callback_data="
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ السورس ›", url=f"https://t.me/Source_Ze"
+                        "‹ السورس ›", url=f"https://t.me/EF_19"
                     ),
                     InlineKeyboardButton(
-                        "‹ اضف البوت لمجموعتك ›", url=f"https://t.me/ze7hbot?startgroup=true"
+                        "‹ اضف البوت لمجموعتك ›", url=f"https://t.me/IC_19bot?startgroup=true"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ الدعم ›", url="https://t.me/ZeSupport"
+                        "‹ الدعم ›", url="https://t.me/jnssghb"
                     )
                 ],
             ]
@@ -65,19 +65,19 @@ InlineKeyboardButton(" member keyboard ", callback_data="Q_XUQ"),
                 ],
                 [                
                     InlineKeyboardButton(" Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton(" Donate ", url=f"https://t.me/Source_Ze"),
+                    InlineKeyboardButton(" Donate ", url=f"https://t.me/EF_19"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱", url=f"https://t.me/Source_Ze"
+                        "『 𝙺𝙸𝙽𝙶 』", url=f"https://t.me/EF_19"
                     ),
                     InlineKeyboardButton(
-                        "‹ المطور ›", url=f"https://t.me/D_S_I"
+                        "‹ المطور ›", url=f"https://t.me/IC_19"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ الدعم ›", url="https://t.me/ZeSupport"
+                        "‹ الدعم ›", url="https://t.me/jnssghb"
                     )
                 ],
             ]
@@ -213,7 +213,7 @@ async def acbguides(_, query: CallbackQuery):
 4.) **تاكد كن تشغيل المحادثة المرئية \n√.**
 5.) ** /Reload اذا واجهت خطأ قم بكتابة الامر \n√.**
 💎 ** في حال لم يستطع الحساب المساعد الانضمام اللي المحادثة المرئية قم بطرد الحساب المساعد بالأمر /غادر \n√.  \n ودعوتة من جديد عنريق الامر /انضم \n√.**
-\n√ **في حال واجهت اي مشكلة اخرى يمكنك التواصل مع المطور من هنا : @D_S_I **
+\n√ **في حال واجهت اي مشكلة اخرى يمكنك التواصل مع المطور من هنا : @IC_19 **
 \n __ Developer """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("‹ عوده ›", callback_data="arbic")]]
