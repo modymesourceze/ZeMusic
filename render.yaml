@@ -24,8 +24,6 @@ services:
         sync: false
       - key: BOT_TOKEN
         sync: false
-      - key: OWNER_ID
-        sync: false
       - key: LOGGER_ID
         sync: false
       - key: PYTHON_VERSION
